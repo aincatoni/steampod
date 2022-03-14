@@ -1,4 +1,16 @@
 /* ======================================== */
+/* fonts
+/* ======================================== */
+@font-face {
+  font-family: "LorealPro-Bold";
+  src: url("/assets/fonts/LOREALPRO-Bold.woff2");
+}
+@font-face {
+  font-family: "LorealPro-Medium";
+  src: url("/assets/fonts/LOREALPRO-Medium.woff2");
+}
+
+/* ======================================== */
 /* .bloc_mosaic
 /* ======================================== */
 #steampod .bloc_mosaic {
@@ -116,66 +128,84 @@
 /* .owl-carousel
 /* ======================================== */
 
-.carousel-wrap {
-  width: 1000px;
-  margin: auto;
-  position: relative;
-}
-.owl-carousel .owl-nav {
-  overflow: hidden;
-  height: 0px;
-}
-
-.owl-theme .owl-dots .owl-dot.active span,
-.owl-theme .owl-dots .owl-dot:hover span {
-  background: #2caae1;
-}
-
-.owl-carousel .item {
-  text-align: center;
-}
-.owl-carousel .nav-btn {
-  height: 47px;
+#steampod .owl-prev,
+.owl-next {
   position: absolute;
-  width: 26px;
-  cursor: pointer;
-  top: 100px !important;
 }
 
-.owl-carousel .owl-prev.disabled,
-.owl-carousel .owl-next.disabled {
-  pointer-events: none;
-  opacity: 0.2;
+#steampod .owl-prev {
+  left: -30px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+#steampod .owl-next {
+  right: -30px;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
-.owl-carousel .prev-slide {
-  background: url(../images/nav-icon.png) no-repeat scroll 0 0;
-  left: -33px;
-}
-.owl-carousel .next-slide {
-  background: url(../images/nav-icon.png) no-repeat scroll -24px 0px;
-  right: -33px;
-}
-.owl-carousel .prev-slide:hover {
-  background-position: 0px -53px;
-}
-.owl-carousel .next-slide:hover {
-  background-position: -24px -53px;
+#steampod .owl-prev span,
+.owl-next span {
+  font-size: 50px;
 }
 
-span.img-text {
+.owl-theme .owl-nav [class*="owl-"]:hover {
+  color: #f91d8f;
   text-decoration: none;
-  outline: none;
-  transition: all 0.4s ease;
-  -webkit-transition: all 0.4s ease;
-  -moz-transition: all 0.4s ease;
-  -o-transition: all 0.4s ease;
-  cursor: pointer;
-  width: 100%;
-  font-size: 23px;
-  display: block;
-  text-transform: capitalize;
+  background: none !important;
 }
-span.img-text:hover {
-  color: #2caae1;
+
+/* ======================================== */
+/* .bloc_discover
+/* ======================================== */
+
+#steampod .title_discover {
+  line-height: 0.9;
+  letter-spacing: -0.01em;
+  font-weight: 700;
+  font-family: LorealPro-Bold;
+  font-size: 2.5rem;
+  padding-bottom: 40px;
+}
+
+#steampod #discover_list ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+#steampod #discover_list ul li {
+  font: 300 1em/1 arial, sans-serif;
+  font-size: 1.5rem;
+  line-height: 1em;
+}
+
+#steampod #discover_list ul li strong {
+  font-family: "LorealPro-Medium";
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1em;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  vertical-align: baseline;
+}
+#steampod #discover_list ul li sup {
+  display: inline-block;
+  font-size: 0.5em;
+  font-weight: 700;
+}
+
+#steampod video {
+  width: 100%;
+}
+
+#steampod .video_mobile {
+  display: none;
+}
+@media screen and (max-width: 767px) {
+  #steampod .video_desktop {
+    display: block;
+  }
 }
