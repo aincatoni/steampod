@@ -135,13 +135,13 @@
 
 #steampod .owl-prev {
   left: -30px;
-  top: 50%;
-  transform: translateY(-50%);
+  top: 30%;
+  transform: translateY(-30%);
 }
 #steampod .owl-next {
   right: -30px;
-  top: 50%;
-  transform: translateY(-50%);
+  top: 30%;
+  transform: translateY(-30%);
 }
 
 #steampod .owl-prev span,
@@ -162,7 +162,7 @@
 #steampod a h4 {
   color: black;
   font-size: 0.7em;
-  word-break: break-all;
+  word-break: break-word;
   transition: ease-in 0.7s;
 }
 
