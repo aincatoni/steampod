@@ -3,11 +3,11 @@
 /* ======================================== */
 @font-face {
   font-family: "LorealPro-Bold";
-  src: url("/assets/fonts/LOREALPRO-Bold.woff2");
+  src: url("../../assets/fonts/LOREALPRO-Bold.woff2");
 }
 @font-face {
   font-family: "LorealPro-Medium";
-  src: url("/assets/fonts/LOREALPRO-Medium.woff2");
+  src: url("../../assets/fonts/LOREALPRO-Medium.woff2");
 }
 
 /* ======================================== */
