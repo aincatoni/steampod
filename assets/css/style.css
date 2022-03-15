@@ -149,10 +149,25 @@
   font-size: 50px;
 }
 
-.owl-theme .owl-nav [class*="owl-"]:hover {
+#steampod .owl-theme .owl-nav [class*="owl-"]:hover {
   color: #f91d8f;
   text-decoration: none;
   background: none !important;
+}
+
+#steampod a {
+  text-decoration: none;
+}
+
+#steampod a h4 {
+  color: black;
+  font-size: 0.7em;
+  word-break: break-all;
+  transition: ease-in 0.7s;
+}
+
+#steampod a h4:hover {
+  color: #f91d8f;
 }
 
 /* ======================================== */
