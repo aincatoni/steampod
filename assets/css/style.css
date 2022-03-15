@@ -159,6 +159,9 @@
   text-decoration: none;
 }
 
+#steampod .owl-carousel img {
+}
+
 #steampod a h4 {
   color: black;
   font-size: 0.7em;
