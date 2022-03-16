@@ -11,20 +11,40 @@
 }
 
 /* ======================================== */
-/* .bloc_mosaic
+/*  Buttons
 /* ======================================== */
-#steampod .bloc_mosaic {
+#steampod .cta,
+#steampod .obj-button {
+  position: relative;
+  display: block;
+  padding: 0.5vw 2vw;
+  min-width: 8.85vw;
+  font-size: var(--aox-fs-16px) !important;
+  line-height: 1;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  color: #000;
+  border: 2px solid #000;
+  border-radius: 100vw;
+  overflow: hidden;
+}
+
+/* ======================================== */
+/* .bloc-mosaic
+/* ======================================== */
+#steampod .bloc-mosaic {
   /* padding-top: 3.9vw; */
   padding-bottom: 3.9vw;
 }
 
-#steampod .bloc_mosaic img {
+#steampod .bloc-mosaic img {
   display: block;
   max-width: 100%;
   margin: 0 auto;
 }
 
-#steampod .bloc_mosaic .bottom .bloc_cta {
+#steampod .bloc-mosaic .bottom .bloc-cta {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
@@ -33,7 +53,7 @@
   overflow: hidden;
 }
 
-#steampod .bloc_mosaic .bottom .bloc_cta .text {
+#steampod .bloc-mosaic .bottom .bloc-cta .text {
   width: 100%;
   position: absolute;
   top: 50%;
@@ -43,24 +63,24 @@
   z-index: 2;
 }
 
-#steampod .bloc_mosaic .bottom .bloc_cta .ctn_button {
+#steampod .bloc-mosaic .bottom .bloc-cta .ctn-button {
   position: relative;
   display: inline-block;
   margin: 1.3vw auto 0;
 }
 
-#steampod .bloc_mosaic .bottom .bloc_cta picture {
+#steampod .bloc-mosaic .bottom .bloc-cta picture {
   position: relative;
   z-index: 1;
   width: 100%;
 }
 
-#steampod .bloc_mosaic .bottom .bloc_cta picture img {
+#steampod .bloc-mosaic .bottom .bloc-cta picture img {
   margin: 0 auto;
   max-width: 90%;
 }
 
-#steampod .bloc_mosaic .bottom .bloc_cta video {
+#steampod .bloc-mosaic .bottom .bloc-cta video {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -68,7 +88,7 @@
   width: auto;
 }
 
-#steampod .bloc_mosaic .ctn_bloc > div {
+#steampod .bloc-mosaic .ctn-bloc > div {
   display: block;
   overflow: hidden;
   height: 0;
@@ -76,37 +96,37 @@
     height 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
-#steampod .bloc_mosaic.parallax-fixed-element-init .ctn_bloc > div {
+#steampod .bloc-mosaic.parallax-fixed-element-init .ctn-bloc > div {
   height: 47.91vw;
 }
 
-#steampod .bloc_mosaic.parallax-fixed-element-init .ctn_bloc .top,
-#steampod .bloc_mosaic.parallax-fixed-element-init .ctn_bloc .bottom {
+#steampod .bloc-mosaic.parallax-fixed-element-init .ctn-bloc .top,
+#steampod .bloc-mosaic.parallax-fixed-element-init .ctn-bloc .bottom {
   height: 23.95vw;
 }
 
 @media screen and (max-width: 768px) {
-  #steampod .bloc_mosaic.parallax-fixed-element-init .ctn_bloc > div {
+  #steampod .bloc-mosaic.parallax-fixed-element-init .ctn-bloc > div {
     height: 280vw;
   }
 
-  #steampod .bloc_mosaic.parallax-fixed-element-init .ctn_bloc .ctn_top-txt {
+  #steampod .bloc-mosaic.parallax-fixed-element-init .ctn-bloc .ctn-top-txt {
     height: 100vw;
   }
 
-  #steampod .bloc_mosaic.parallax-fixed-element-init .ctn_bloc .top {
+  #steampod .bloc-mosaic.parallax-fixed-element-init .ctn-bloc .top {
     height: 100vw;
   }
 
-  #steampod .bloc_mosaic.parallax-fixed-element-init .ctn_bloc .bottom {
+  #steampod .bloc-mosaic.parallax-fixed-element-init .ctn-bloc .bottom {
     height: 180.95vw;
   }
 
   #steampod
-    .bloc_mosaic.parallax-fixed-element-init
-    .ctn_bloc
+    .bloc-mosaic.parallax-fixed-element-init
+    .ctn-bloc
     .bottom
-    .bloc_cta {
+    .bloc-cta {
     width: 100vw;
     height: 80.95vw;
     position: relative;
@@ -114,12 +134,12 @@
     transform: none;
   }
 
-  #steampod .bloc_mosaic .bottom .bloc_cta picture img {
+  #steampod .bloc-mosaic .bottom .bloc-cta picture img {
     width: 73.8vw;
     max-width: inherit;
   }
 
-  #steampod .bloc_mosaic .bottom .bloc_cta .ctn_button {
+  #steampod .bloc-mosaic .bottom .bloc-cta .ctn-button {
     margin-top: 5.95vw;
   }
 }
@@ -174,31 +194,31 @@
 }
 
 /* ======================================== */
-/* .bloc_discover
+/* .bloc-discover
 /* ======================================== */
 
-#steampod .title_discover {
+#steampod .title-discover {
   line-height: 0.9;
   letter-spacing: -0.01em;
   font-weight: 700;
-  font-family: LorealPro-Bold;
+  font-family: "LorealPro-Bold", sans-serif;
   font-size: 2.5rem;
   padding-bottom: 40px;
 }
 
-#steampod #discover_list ul {
+#steampod #discover-list ul {
   list-style: none;
   margin: 0;
   padding: 0;
 }
-#steampod #discover_list ul li {
+#steampod #discover-list ul li {
   font: 300 1em/1 arial, sans-serif;
   font-size: 1.5rem;
   line-height: 1em;
 }
 
-#steampod #discover_list ul li strong {
-  font-family: "LorealPro-Medium";
+#steampod #discover-list ul li strong {
+  font-family: "LorealPro-Medium", sans-serif;
   font-weight: 700;
   font-size: 36px;
   line-height: 1em;
@@ -209,7 +229,7 @@
   outline: 0;
   vertical-align: baseline;
 }
-#steampod #discover_list ul li sup {
+#steampod #discover-list ul li sup {
   display: inline-block;
   font-size: 0.5em;
   font-weight: 700;
@@ -219,11 +239,11 @@
   width: 100%;
 }
 
-#steampod .video_mobile {
+#steampod .video-mobile {
   display: none;
 }
 @media screen and (max-width: 767px) {
-  #steampod .video_desktop {
+  #steampod .video-desktop {
     display: block;
   }
 }
