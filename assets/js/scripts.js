@@ -1,5 +1,5 @@
 $(document).ready(function () {
-  $(".owl-carousel").owlCarousel({
+  $("#steampod .owl-carousel").owlCarousel({
     margin: 10,
     nav: true,
     responsive: {
